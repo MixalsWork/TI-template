@@ -1,2 +1,2 @@
 # templates
-https://mixalswork.github.io/templates/
+https://mixalswork.github.io/TI-template/
