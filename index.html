@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical inspection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light  col-12 col-xl-8 m-auto header__navbar ">
+            <a class="navbar-brand header__logo d-flex align-items-center" href="#">
+                <img src="img/new-logo.jpg" height="70px" width="70px"  class="d-inline-block align-top header__logo-img" alt="" loading="lazy">
+                <div class="header__logo-text">
+                        <span class=" header__logo-text-important">Technical</span>inspection 
+                </div>
+            </a>
+            <div class="header__toggler-box">
+              <button class="header__call navbar-toggler"><a href="tel:"><img src="img/phone.svg" alt="phone"></a></button>
+              <button class="navbar-toggler header__nav-bar-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto header__nav d-flex align-items-center ">
+                <li class="nav-item d-flex align-items-center">
+                  
+                  <a class="nav-link header__nav-link" href="tel:">Call us  <img src="img/phone.svg" alt="logo" width="30px" height="30px">  </a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link header__nav-link dropdown-toggle header__dropdown-important text-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                    Need to know
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item scroll-to" href="#category">Car categories</a>
+                    <a class="dropdown-item scroll-to" href="#catgory-descr">Description of categories</a>
+                    <a class="dropdown-item scroll-to" href="#need">What you need for inspection</a>
+                    <a class="dropdown-item scroll-to" href="#demands">Requirements for cars for inspection</a>
+                    <a class="dropdown-item scroll-to" href="#price">Our prices</a>
+                    <a class="dropdown-item scroll-to text-wrap" href="#faq">What does mandatory technical inspection mean?</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item scroll-to" href="#contacts">Our contacts</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="header__icon-box">
+                      <div class="header__icon">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="header__facebook" width="44" height="44" fill='#C2272D' viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
+                        </a>
+                      </div>
+                      <div class="header__icon">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" class='header__instagram' width="44" height="44" fill='#C2272D' viewBox="0 0 24 24"><path d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"/></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <div class="main" id="main">
+      <div class="container">
+          <div class="row d-flex align-items-center">
+          <div class="main__text col-12 col-xl-6">
+            <div class="main__title col-12">
+              Inspection in your city
+            </div>
+            <div class="main__subtitle col-12">
+              - fast and high quality!
+            </div>
+            <div class="main__descr col-12">
+              Our company will help you quickly, efficiently and profitably pass the inspection for all types of vehicles
+            </div>
+            <div class="main__button col-12">
+              <a href="tel:" class="btn  btn-lg btn-block main__button-a" role="button" aria-pressed="true">Sign up for tech</a>
+            </div>
+          </div>
+          <div class="main__img col-12 col-xl-6">
+            <img src="img/cartoon-car-repair-new.jpg" alt="" class="col-12">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="category " id='category'>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 category__title">
+            Categories of vehicles we serve
+          </div>
+        </div>
+        <div class="row category__box">
+          <div class="category__item-box col-12 col-lg-7 ml-auto">
+            <div class="row category__item-box-row">
+              <div class="col-10 col-lg-5 category__item scroll-to" href='#catgory-descr'>
+                <div class="category__item-img">
+                  <img src="img/car.svg" alt="car">
+                </div>
+                <div class="category__item-text">
+                  <div class="category__item-title">
+                    М1
+                  </div>
+                  <div class="category__item-subtitle">
+                    Cars
+                  </div>
+                  <div class="category__item-action">
+                    Read more
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 col-lg-5 category__item scroll-to" href='#catgory-descr'>
+                <div class="category__item-img">
+                  <img src="img/bus.svg" alt="car">
+                </div>
+                <div class="category__item-text">
+                  <div class="category__item-title">
+                    M2, M3
+                  </div>
+                  <div class="category__item-subtitle">
+                    Buses and minibuses
+                  </div>
+                  <div class="category__item-action">
+                    Read more
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row category__item-box-row">
+              <div class="col-10 col-lg-5 category__item scroll-to" href='#catgory-descr-n1'>
+                <div class="category__item-img">
+                  <img src="img/track.svg" alt="car">
+                </div>
+                <div class="category__item-text">
+                  <div class="category__item-title">
+                    N1, N2, N3
+                  </div>
+                  <div class="category__item-subtitle">
+                    Trucks
+                  </div>
+                  <div class="category__item-action">
+                    Read more
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 col-lg-5 category__item scroll-to" href='#catgory-descr-o1'>
+                <div class="category__item-img">
+                  <img src="img/trailer.svg" alt="car">
+                </div>
+                <div class="category__item-text">
+                  <div class="category__item-title">
+                    O1, О3, О4
+                  </div>
+                  <div class="category__item-subtitle">
+                    Trailers and semi-trailers
+                  </div>
+                  <div class="category__item-action">
+                    Read more
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="table" id="catgory-descr">
+      <div class="container table__container">
+        <div class="table__title">
+          Description of categories
+        </div>
+        <table class="table table-striped table-dark table-bordered table-hover table-responsive">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Category</th>
+              <th scope="col">Category description</th>
+              <th scope="col">Number of seats</th>
+              <th scope="col">Gross vehicle weight</th>
+              <th scope="col">Periodicity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>М1</td>
+              <td>Vehicles used for the carriage of passengers and having not more than eight seats in addition to the driver's seat</td>
+              <td>no more than 8 without a driver</td>
+              <td></td>
+              <td>every two years (taxi - once a year)</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>М2</td>
+              <td>Vehicles used for the carriage of passengers and having more than eight seats in addition to the driver's seat and having a maximum mass not exceeding 5 tonnes</td>
+              <td>more than 8 without a driver</td>
+              <td>up to 5 tons</td>
+              <td>twice a year</td>
+            </tr>
+            <tr>
+              <th scope="row" id="catgory-descr-n1">3</th>
+              <td>M3</td>
+              <td>Vehicles used for the carriage of passengers and having more than eight seats in addition to the driver's seat and having a maximum mass exceeding 5 tonnes, vehicles do not have a platform for standing passengers</td>
+              <td>more than 8 without a driver</td>
+              <td>more than 5 tons</td>
+              <td>twice a year</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>N1</td>
+              <td>Vehicles used for the carriage of goods and having a maximum mass not exceeding 3.5 tonnes</td>
+              <td></td>
+              <td>up to 3.5 tons</td>
+              <td>every two years</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>N2</td>
+              <td>Vehicles used for the carriage of goods and having a maximum mass exceeding 3.5 tonnes but not exceeding 12 tonnes</td>
+              <td></td>
+              <td>from 3.5 to 12 tons</td>
+              <td>for trucks with a capacity of up to 3.5 tons, with a service life of more than two years - every 2 years. For trucks and taxis with a capacity of more than 3.5 tons, regardless of the service life - annually</td>
+            </tr>
+            <tr>
+              <th scope="row" id="catgory-descr-o1">6</th>
+              <td>N3</td>
+              <td>Vehicles used for the carriage of goods and having a maximum mass exceeding 12 tonnes</td>
+              <td></td>
+              <td>from 12 tons</td>
+              <td>for trucks with a capacity of up to 3.5 tons, with a service life of more than two years - every 2 years. For trucks with a capacity of more than 3.5 tons, regardless of the service life - annually</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>O1</td>
+              <td>Trailers with a maximum weight not exceeding 0.75 tons</td>
+              <td></td>
+              <td>up to 0.75 tons</td>
+              <td>every two years</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>O3</td>
+              <td>Trailers with a maximum mass exceeding 3.5 tonnes but not exceeding 10 tonnes</td>
+              <td></td>
+              <td>from 3.5 to 10 tons</td>
+              <td>trailers with a carrying capacity of up to 3.5 tons, with a service life of more than two years - every 2 years. For trailers with a capacity of more than 3.5 tons, regardless of the service life - annually</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>O4</td>
+              <td>Trailers with a maximum weight of more than 10 tons</td>
+              <td></td>
+              <td>from 10 tons</td>
+              <td>trailers with a carrying capacity of up to 3.5 tons, with a service life of more than two years - every 2 years. For trailers with a capacity of more than 3.5 tons, regardless of the service life - annually</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>ALL</td>
+              <td>Transportation of dangerous goods for all categories</td>
+              <td></td>
+              <td></td>
+              <td>twice a year</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="need" id="need">
+      <div class="container">
+        <div class="need__top-title">
+          What you need for tech
+        </div>
+        <div class="row need__item-box">
+          <div class="col-10 col-lg-5 need__item">
+            <div class="need__img">
+              <img src="img/carwash-machine.svg" alt="icon" class="need__icon">
+            </div>
+            <div class="need__text">
+              <div class="need__title">
+                EXTERNAL TRAINING
+              </div>
+              <div class="need__descr">
+                <p>
+                  The vehicle must comply with all entries in the registration documents for it.
+                </p>
+                <p>
+                  The vehicle must be clean, both outside and inside.
+                </p>
+                <p>
+                  Windshield without cracks.
+                </p>
+                <p>
+                  The vehicle must be filled with all necessary operating fluids.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 col-lg-5 need__item">
+            <div class="need__img">
+              <img src="img/car-repair.svg" alt="icon" class="need__icon">
+            </div>
+            <div class="need__text">
+              <div class="need__title">
+                INTERNAL PREPARATION
+              </div>
+              <div class="need__descr">
+                <p>
+                  The brake system and handbrake must operate without failure. The tires must be the same size and pattern on the same axle as the corresponding treads.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 col-lg-5 need__item">
+            <div class="need__img">
+              <img src="img/document.svg" alt="icon" class="need__icon">
+            </div>
+            <div class="need__text">
+              <div class="need__title">
+                VEHICLE DOCUMENTS
+              </div>
+              <div class="need__descr">
+                <p>
+                  Certificate of state registration of the vehicle.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 col-lg-5 need__item">
+            <div class="need__img">
+              <img src="img/personal-information.svg" alt="icon" class="need__icon">
+            </div>
+            <div class="need__text">
+              <div class="need__title">
+                CLIENT DOCUMENTS
+              </div>
+              <div class="need__descr">
+                <p>
+                  Identity document of the driver.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="demands" id="demands">
+      <div class="container">
+        <div class="demands__title">
+          Requirements for cars for inspection
+        </div>
+        <div class="col-12 col-lg-8 demands__subtitle">
+          Before arriving at the test laboratory, the driver and / or car owner must check:
+        </div>
+        <ol class="demands__list">
+          <li class="demands__list-item">
+            Serviceability of external lighting devices, alarm systems
+          </li>
+          <li class="demands__list-item">
+            Serviceability of brake system
+          </li>
+          <li class="demands__list-item">
+            Condition of steering elements and chassis
+          </li>
+          <li class="demands__list-item">
+            Uniformity of wear of tires and residual height of a protector
+          </li>
+          <li class="demands__list-item">
+            Integrity and tightness of technical fluid tanks
+          </li>
+          <li class="demands__list-item">
+            Integrity of glass, lack of additional cover on it
+          </li>
+          <li class="demands__list-item">
+            Serviceability of windshield washers and wipers
+          </li>
+          <li class="demands__list-item">
+            Equipped with fire extinguisher, first aid kit, spare wheel and emergency stop sign
+          </li>
+          <li class="demands__list-item">
+            We also remind you that the car must be free of dirt, corrosion and filled with all fluids in accordance with the operating instructions
+          </li>
+          <li class="demands__list-item">
+            Get acquainted with the REQUIREMENTS
+            to check the design and technical condition of the wheeled vehicle, as well as control methods:
+            <ol class="demands__list-in-list">
+              <li class="demands__list-in-list-item"><a href="# ">Your country link</a></li>
+              <li class="demands__list-in-list-item"><a href="#">Your country link</a></li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="price" id="price">
+      <div class="container price__container">
+        <div class="price__title">
+          Our prices
+        </div>
+        <table class="table table-striped table-dark table-bordered table-hover ">
+          <thead>
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Description</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">М1</th>
+              <td>cars up to 8 seats (except the driver's seat)</td>
+              <td>Your price</td>
+            </tr>
+            <tr>
+              <th scope="row">М2</th>
+              <td>buses more than 8 seats (except the driver's seat) with a gross weight of up to 5 tons</td>
+              <td>Your price</td>
+            </tr>
+            <tr>
+              <th scope="row">М3</th>
+              <td>buses more than 8 seats (except the driver's seat) with a gross weight of more than 5 tons</td>
+              <td>Your price</td>
+            </tr>
+            <tr>
+              <th scope="row">N1</th>
+              <td>trucks with a gross weight of up to 3.5 tons</td>
+              <td>Your price</td>
+            </tr>
+            <tr>
+              <th scope="row">N2</th>
+              <td>trucks and tractors with a gross weight of 3.5 tons to 12 tons</td>
+              <td>Your price</td>
+            </tr>
+            <tr>
+              <th scope="row">N3</th>
+              <td>trucks and tractors with a gross vehicle weight of more than 12 tons</td>
+              <td>Your price</td>
+            </tr>
+            <tr>
+              <th scope="row">О2</th>
+              <td>trailers and semi-trailers with a gross weight of up to 3.5 tons</td>
+              <td>Your price</td>
+            </tr>
+            <tr>
+              <th scope="row">О3</th>
+              <td>trailers and semi-trailers with a gross weight of 3.5 tons to 10 tons</td>
+              <td>Your price</td>
+            </tr>
+            <tr>
+              <th scope="row">О4</th>
+              <td>trailers and semi-trailers with a gross weight of more than 10 tons</td>
+              <td>Your price</td>
+            </tr>
+            <tr>
+              <th scope="row">N1</th>
+              <td></td>
+              <td>Your price</td>
+            </tr>
+            <tr>
+              <th scope="row">N2</th>
+              <td>trucks and tractors with a gross weight of 3.5 tons to 12 tons, transporting dangerous goods</td>
+              <td>Your price</td>
+            </tr>
+            <tr>
+              <th scope="row">N3</th>
+              <td>trucks and tractors with a gross vehicle weight of more than 12 tons, transporting dangerous goods</td>
+              <td>Your price</td>
+            </tr>
+            <tr>
+              <th scope="row">О4</th>
+              <td>trailers and semi-trailers with a gross weight of more than 10 tons, transporting dangerous goods</td>
+              <td>Your price</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="faq" id="faq">
+      <div class="container">
+        <div class="faq__title">
+          What does mandatory  mean?
+        </div>
+        <div class="faq__subtitle col-12 col-lg-8">
+          Technical inspection of the vehicle involves checking the technical condition of the vehicle, namely:
+        </div>
+        <ol class="faq__list">
+          <li class="faq__list-item">- brake and steering systems;
+          </li>
+          <li class="faq__list-item">- external lighting fixtures;
+          </li>
+          <li class="faq__list-item">- pneumatic tires and wheels;
+          </li>
+          <li class="faq__list-item">- light transmission of glass;
+          </li>
+          <li class="faq__list-item">- gas cylinder equipment (if available);
+          </li>
+          <li class="faq__list-item">- other elements in the part directly related to road safety and environmental protection;
+          </li>
+          <li class="faq__list-item">- photofixation of the inspection process
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__title">
+          Our contacts
+        </div>
+        <div class="contacts__subtitle">
+            <ol class="contacts__list">
+              <li class="contacts__list-item">Hours of work: </li>
+              <li class="contacts__list-item">Mon-Fri: 09:00 to 18:00 (without breaks)</li>
+              <li class="contacts__list-item">SAT: By appointment</li>
+              <li class="contacts__list-item">Sun: <span class="contacts__list-item--important">Weekend</span></li>
+            </ol>
+        </div>
+        <div class="contacts__phone">
+          <a href="tel:">Your number</a>
+          <a href="tel:">Your number</a>
+        </div>
+        <div class="row contacts__box">
+          <div class="contacts__adress col-12 col-lg-3">
+            <div class="contacts__city">
+              Your city
+            </div>
+            <div class="contacts__street">
+              Adress
+            </div>
+            <div class="contacts__home">
+              Adress
+            </div>
+            <button class="contacts__button">
+              <a target="_blank" jstcache="52" href="https://goo.gl/maps/sSJeX7h1qK4RQqcy6" class="navigate-link"> <div class="icon navigate-icon"></div> <div jstcache="53" class="navigate-text"> Get directions </div> </a>
+            </button>
+          </div>
+          
+          <div class="contacts__map col-12 col-lg-9">
+            <iframe class="contacts__google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.7281086143!2d-0.24167978096635917!3d51.52877184031897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z0JvQvtC90LTQvtC9LCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sua!4v1611920841113!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row align-items-center justify-content-center ">
+          <a class="navbar-brand footer__logo d-flex align-items-center justify-content-center col-6 col-md-2" href="#">
+            <img src="img/new-logo.jpg" height="70px" width="70px"  class="d-inline-block align-top footer__logo-img" alt="logo" loading="lazy">
+        </a>
+        <div class="footer__logo-text col-10 col-md-3">
+          <span class=" footer__logo-text-important">Technical</span>inspection
+        </div>
+        <div class="footer__icon-box col-12 col-md-2">
+          <div class="footer__icon">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="footer__facebook" width="44" height="44" fill='#C2272D' viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
+            </a>
+          </div>
+          <div class="footer__icon">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class='footer__instagram' width="44" height="44" fill='#C2272D' viewBox="0 0 24 24"><path d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"/></svg>
+            </a>
+          </div>
+        </div>
+        <a class="nav-link footer__nav-link col-10 col-md-4" href="tel:">Call us<img src="img/phone.svg" alt="" width="30px" height="30px">  </a>
+        </div>
+      </div>
+    </div>
+    <div class="action">
+      <button class="action__button d-none"><a href="#main" class="scroll-to">Up</a></button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>
